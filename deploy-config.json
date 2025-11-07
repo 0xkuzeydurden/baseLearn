@@ -1,0 +1,7 @@
+{
+  "WeightedVoting": ["Weighted Voting Token", "WVT"],
+  "Salaried": [1, 101, 120000],
+  "Hourly": [2, 101, 60],
+  "EmployeeStorage": [1000, "Pat", 50000, 112358132134],
+  "InheritanceSubmission": ["$EngineeringManager", "$Salesperson"]
+}

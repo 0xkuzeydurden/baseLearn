@@ -1,0 +1,7 @@
+[build]
+  base = "."
+  command = "cd ui && npm install && npm run build"
+  publish = "ui/dist"
+
+[build.environment]
+  NODE_VERSION = "20"

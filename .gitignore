@@ -1,0 +1,17 @@
+# Local Netlify folder
+.netlify
+
+# Node / Vite / Hardhat artifacts
+node_modules/
+dist/
+ui/dist/
+artifacts/
+cache/
+deployments/
+
+# Environment and config secrets
+.env
+.env.*
+
+# OS junk
+.DS_Store

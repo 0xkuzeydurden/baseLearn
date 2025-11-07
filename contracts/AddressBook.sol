@@ -1,9 +1,9 @@
-// SPDX-License-Identifier: MIT use this instead ( // SPDX-License-Identifier: GPL-3.0 )
-pragma solidity ^0.8.8;
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract AddressBook is Ownable(msg.sender) {
+contract AddressBook is Ownable {
     // Define a private salt value for internal use
     string private salt = "value"; 
 
@@ -26,6 +26,8 @@ contract AddressBook is Ownable(msg.sender) {
 
     // Custom error for when a contact is not found
     error ContactNotFound(uint id);
+
+    constructor() Ownable(msg.sender) {}
 
     // Function to add a new contact
     function addContact(string calldata firstName, string calldata lastName, uint[] calldata phoneNumbers) external onlyOwner {

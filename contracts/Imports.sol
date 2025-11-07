@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 
+pragma solidity 0.8.17;
+
 // Importing the SillyStringUtils library
 import "./SillyStringUtils.sol";
-
-pragma solidity 0.8.17;
 
 contract ImportsExercise {
     // Using the SillyStringUtils library for string manipulation

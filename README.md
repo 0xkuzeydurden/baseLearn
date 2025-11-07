@@ -1,5 +1,7 @@
 # Base Camp Learn One-Click Deployer
 
+> Developed by [Kuzey Durden](https://x.com/islakwcterlii/)
+
 This repository packages all of the Solidity exercises from [mztacat/Base](https://github.com/mztacat/Base) into a single Hardhat project so you can compile and deploy every contract in one run. The generated deployment report makes it easy to submit addresses and claim the Base Camp Learn badges referenced in [Berlin💎.ink's thread](https://x.com/isnotberlin/status/1969181622164734028).
 
 ## Prerequisites
@@ -62,5 +64,19 @@ The tweet series outlines five on-chain smart-contract modules plus DeFi interac
 - Re-run `npm run deploy:base-sepolia` if a transaction fails; Hardhat will deploy new instances and overwrite the JSON report.
 - Keep a backup of your deployment file before redeploying, in case you need the original addresses.
 - Gas can spike during Base mainnet events. Test on Base Sepolia first, then move to mainnet once you are sure everything verifies.
+
+## Optional UI for wallet-driven deployments
+If you would rather deploy and claim each registry PIN straight from a browser wallet, the repo now includes a lightweight React/Vite dapp that reuses the compiled Hardhat artifacts.
+
+1. `cd ui && npm install`
+2. `npm run dev` to start the local server (or `npm run build` for a production bundle)
+
+Features:
+- RainbowKit + WalletConnect (single “Connect Wallet” modal) with Base Sepolia preset.
+- Constructor forms that mirror the defaults in `scripts/deploy-register.js`.
+- One-click registry submissions (“Claim PIN”) with the correct gas limits per contract.
+- Local progress tracking per wallet + chain (deploy tx, contract address, registry tx).
+
+Because the UI imports JSON from `../artifacts`, re-run `npx hardhat compile` after changing any Solidity file so the frontend picks up the latest ABI/bytecode. For WalletConnect, create `ui/.env` and set `VITE_WALLETCONNECT_PROJECT_ID=<your_project_id>` to override the bundled demo key.
 
 Happy building and good luck claiming those badges!

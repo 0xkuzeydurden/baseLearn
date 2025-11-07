@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 // Importing OpenZeppelin ERC721 contract
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 // Interface for interacting with a submission contract
 interface ISubmission {

@@ -1,0 +1,32 @@
+:root {
+  font-family: "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: #e2e8f0;
+  background-color: #030712;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #111b2b 0%, #030712 55%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: #93c5fd;
+}
+
+button {
+  font: inherit;
+}
