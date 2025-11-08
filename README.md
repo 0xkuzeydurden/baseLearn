@@ -2,7 +2,7 @@
 
 > Developed by [Kuzey Durden](https://x.com/islakwcterlii/)
 
-This repository packages all of the Solidity exercises from [mztacat/Base](https://github.com/mztacat/Base) into a single Hardhat project so you can compile and deploy every contract in one run. The generated deployment report makes it easy to submit addresses and claim the Base Camp Learn badges referenced in [Berlin💎.ink's thread](https://x.com/isnotberlin/status/1969181622164734028).
+This repository packages all of the Solidity exercises from [mztacat/Base](https://github.com/mztacat/Base) into a single Hardhat project so you can compile and deploy every contract in one run. The generated deployment report makes it easy to submit addresses and claim the Base Camp Learn badges
 
 ## Prerequisites
 - Node.js 18+ (developed with v24)
