@@ -25,6 +25,12 @@
   font-weight: 600;
 }
 
+.credit-row {
+  display: flex;
+  justify-content: center;
+  padding: 0.25rem 0 0.5rem;
+}
+
 .hero {
   background: radial-gradient(circle at top left, rgba(79, 70, 229, 0.35), transparent 55%),
     #0b1220;

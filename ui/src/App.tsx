@@ -26,12 +26,6 @@ function App() {
 
   return (
     <div className="app">
-      <div className="credit-pill">
-        Developed by{" "}
-        <a href="https://x.com/islakwcterlii/" target="_blank" rel="noreferrer">
-          Kuzey Durden
-        </a>
-      </div>
       <header className="hero">
         <div>
           <p className="eyebrow">Base Camp Learn</p>
@@ -68,6 +62,15 @@ function App() {
           </p>
         </div>
       </section>
+
+      <div className="credit-row">
+        <div className="credit-pill">
+          Developed by{" "}
+          <a href="https://x.com/islakwcterlii/" target="_blank" rel="noreferrer">
+            Kuzey Durden
+          </a>
+        </div>
+      </div>
 
       {contractGroups.map((group) => (
         <TaskGroup
